@@ -181,7 +181,7 @@ a < 20
     : a > 40
     ? console.log("> 40")
             : console.log("Unknown");
-    
+
 
 var st = "Elzero Web School";
 console.log(typeof st);
@@ -222,7 +222,7 @@ let salary = 0;
 switch (job) {
     case "Manager":
         salary = 8000;
-        console.log(salary);         
+        console.log(salary);
         break;
 
     default:
@@ -237,7 +237,7 @@ if (holidays == 0) {
     console.log(`My Money is ${money}`);
 } else if (holidays == 1 || 2) {
     money = 3000;
-    console.log(`My Money is ${money}`); 
+    console.log(`My Money is ${money}`);
 }
 */
 
@@ -1472,12 +1472,12 @@ for (i = 0; i < myAdmins.length; i++){
 
 
 
-let letters = ["a", "b", "c", "d", "f"]
-let nums = [1, 2, 3, 4, 5]
+// let letters = ["a", "b", "c", "d", "f"]
+// let nums = [1, 2, 3, 4, 5]
 
-for (i in nums) {
-    console.log(letters[i] + " => " + nums[i]);
-}
+// for (i in nums) {
+//     console.log(letters[i] + " => " + nums[i]);
+// }
 
 // output
 // 1=> a
@@ -1495,3 +1495,1157 @@ for (i in nums) {
 //     }
 // }
 
+
+/*
+let myFriends = ["anas", "sayed", "ali", ["shady", "amr", ["mohamd", "gamal"]]]
+
+let [ , ,,[a,,[,b]]] = myFriends
+
+console.log(a);
+console.log(b);
+*/
+
+
+
+// let chosen = 1;
+// let myFriends = [
+//     { title: "Osama", age: 39, available: true, skills: ["Html", "Css"] },
+//     { title: "Ahmed", age: 36, available: false, skills: ["Python", "Django"] },
+//     { title: "Sayed", age: 31, available: true, skills: ["PHP", "Laravel"] }
+// ]
+
+// showDetails(chosen)
+// function showDetails(chosen) {
+//     let friend = myFriends[chosen - 1 ];
+//     let { title: name, age, available, skills: [, skill2] } = friend;
+//     console.log(`${name} , ${age} , ${available == true?"available":"not available"} , ${skill2}`);
+// }
+
+
+
+// Destructuring  [115] to [122] assignment 1
+// -----------------------------------------
+// let myNumbers = [1, 2, 3, 4, 5];
+// let [ a, b, c, d, e ] = myNumbers;
+// // Write Your Destructuring Assignment Here
+
+// console.log(a * e); // 5
+
+
+
+
+
+
+
+// Destructuring  [115] to [122] assignment 2
+// -------------------------------------------
+// let mySkills = ["HTML", "CSS", "JavaScript", ["PHP", "Python", ["Django", "Laravel"]]];
+// let [a,b,c,[d,e,[f,g]]]=mySkills
+// // Write Your Destructuring Assignment Here
+
+// console.log(`My Skills: ${a}, ${b}, ${c}, ${d}, ${e}, ${f}, ${g}`);
+
+// // My Skills: HTML, CSS, JavaScript, PHP, Python, Django, Laravel
+
+
+
+
+
+
+// Destructuring  [115] to [122] assignment 3
+// ------------------------------------------
+// let arr1 = ["Ahmed", "Sameh", "Sayed"];
+// let arr2 = ["Mohamed", "Gamal", "Amir"];
+// let arr3 = ["Haytham", "Shady", "Mahmoud"];
+// let arr4 = arr1.concat(arr2,arr3)
+// console.log(arr4);
+// [c, , , b, , ,, a, ] = arr4
+// // Play With Arrays To Prepare For Destructuring
+// // Write Your Destructuring Assignment Here
+
+// console.log(`My Best Friends: ${a}, ${b}, ${c}`);
+
+// // My Best Friends: Shady, Mahmoud, Ahmed
+
+
+
+
+
+
+
+
+// Destructuring  [115] to [122] assignment 4
+// ------------------------------------------
+// const member = {
+//     age: 30,
+//     working: false,
+//     country: "Egypt",
+//     hobbies: ["Reading", "Swimming", "Programming"],
+// };
+
+// let{ age: a, country: c,working:w,hobbies:[h1,h2,h3] } = member;
+// // Write Your Destructuring Assignment Here
+
+// console.log(`My Age Is ${a} And I'm ${w ? "" : "Not"} Working`);
+// // My Age Is 30 And Iam Not Working
+
+// console.log(`I Live in ${c}`);
+// // I Live in Egypt
+
+// console.log(`My Hobbies: ${h1} And ${h3}`);
+// // My Hobbies: Reading And Programming
+
+
+
+
+
+
+
+
+// // Destructuring  [115] to [122] assignment 5
+// // ------------------------------------------
+// const game = {
+//     title: "YS",
+//     developer: "Falcom",
+//     releases: {
+//         "Oath In Felghana": ["USA", "Japan"],
+//         "Ark Of Napishtim": {
+//             US: "20 USD",
+//             JAP: "10 USD",
+//         },
+//         Origin: "30 USD",
+//     },
+// };
+// let { title: t, developer: d, releases: {"Oath In Felghana": o , "Ark Of Napishtim": a , Origin: or } } = game
+// let [u, j] = o;
+// let { US: u_price, JAP: j_price } = a;
+
+// // Write Your Destructuring Assignment/s Here
+
+// console.log(`My Favourite Games Style Is ${t} Style`);
+// // My Favourite Games Style Is YS Style
+
+// console.log(`And I Love ${d} Games`);
+// // And I Love Falcom Games
+
+// console.log(`My Best Release Is ${o} It Released in ${u} & ${j}`);
+// // My Best Release Is Oath In Felghana It Released in USA & Japan
+
+// console.log(`Although I Love ${a}`);
+// // Although I Love Ark Of Napishtim
+
+// console.log(`${a} Price in USA Is ${u_price}`);
+// // Ark Of Napishtim Price in USA Is 20 USD
+
+// console.log(`${a} Price in Japan Is ${j_price}`);
+// // Ark Of Napishtim Price in Japan Is 10 USD
+
+// console.log(`Origin Price Is ${or}`);
+// // Origin Price Is 30 USD
+
+
+
+
+
+
+
+
+
+
+
+// // Destructuring  [115] to [122] assignment 6
+// // ------------------------------------------
+// let chosen = 1;
+
+// let myFriends = [
+//     { title: "Osama", age: 39, available: true, skills: ["HTML", "CSS"] },
+//     { title: "Ahmed", age: 25, available: false, skills: ["Python", "Django"] },
+//     { title: "Sayed", age: 33, available: true, skills: ["PHP", "Laravel"] },
+// ];
+
+// // Write Your Code Here
+
+// showDetails(chosen)
+// function showDetails(chosen) {
+//     let friend = myFriends[chosen - 1 ];
+//     let { title: name, age, available, skills: [, skill2] } = friend;
+//     console.log(`${name} , ${age} , ${available == true?"available":"not available"} , ${skill2}`);
+// }
+
+// // If chosen === 1
+
+// "Osama"
+// 39
+// "Available"
+// "CSS"
+
+// // If chosen === 2
+
+// "Ahmed"
+// 25
+// "Not Available"
+// "Django"
+
+// // If chosen === 3
+
+// "Sayed"
+// 33
+// "Available"
+// "Laravel"
+
+
+
+
+// let nums = [1, 2, 3, 4, 5, 6, 7, 8];
+// let check = nums.some(function (e) {
+//     console.log("test");
+//     return e > 6
+// })
+
+// console.log(check);
+
+
+
+
+
+
+
+/*
+Map and set + what you learn => challenge Requirements
+- you cant use Numbers or True or False
+- don't use Array Indexes
+- You can't use loop 
+- 
+*/
+// let n1 = [10, 30, 10, 20];
+// let n2 = [30, 20, 10];
+
+// // console.log(Math.max(...n2)*[...n1,...n2].length); الحل الاول
+
+// console.log(new Set([...n1]).size * new Array(...n1, ...n2).length * Math.min(...n1)); // 210 الحل الثاني
+
+
+
+
+// // Destructuring [123] to [133] assignment 1
+// // ------------------------------------------
+// let setOfNumbers = new Set().add(10)
+
+// setOfNumbers.add(20).add(setOfNumbers.size)
+// console.log(setOfNumbers);
+// console.log([...setOfNumbers].slice(2).toString());
+
+
+
+
+
+// // Destructuring [123] to [133] assignment 2
+// // ------------------------------------------
+// let myFriends = ["Osama", "Ahmed", "Sayed", "Sayed", "Mahmoud", "Osama"];
+// console.log([...new Set(myFriends)].sort());
+
+
+// Needed Output
+// (4)['Ahmed', 'Mahmoud', 'Osama', 'Sayed']
+
+
+
+
+// // Destructuring [123] to [133] assignment 3
+// // ------------------------------------------
+
+// let myInfo = {
+//     username: "Osama",
+//     role: "Admin",
+//     country: "Egypt",
+// };
+// let newMap = new Map(Object.entries(myInfo))
+// console.log(newMap);
+// console.log(newMap.size);
+// console.log(newMap.has("role"));
+
+// Needed Output
+// Map(3) { 'username' => 'Osama', 'role' => 'Admin', 'country' => 'Egypt' }
+// 3
+// true
+
+
+
+
+// // Destructuring [123] to [133] assignment 4
+// // ------------------------------------------
+
+// let theNumber = 100020003000;
+// console.log([...new Set(theNumber.toString())].filter(function(e){return +e}).join(""));
+
+// console.log([...new Set(theNumber.toString())].filter(function(e){return +e}).join(""));
+// Needed Output
+// 123
+
+
+
+
+// // Destructuring [123] to [133] assignment 5
+// // ------------------------------------------
+// let theName = "Elzero";
+// 1
+// console.log([...theName]);
+//2
+// console.log(theName.split(""));
+//3
+// console.log(Object.assign([],theName));
+//4
+// console.log(Array.from(theName));
+//5
+// let arr = []
+// console.log(for(i in theName){arr.push(i)});
+
+// Needed Output
+// ['E', 'l', 'z', 'e', 'r', 'o']
+
+
+
+
+// // Destructuring [123] to [133] assignment 6
+// // ------------------------------------------
+// let chars = ["A", "B", "C", "D", "E", 10, 15, 6];
+// let chars = [10, 15, 6, "A", "B", "C", "D", "E"];
+// let chars = ["A", "B", "C", "A", "B", "C", "D", "E"];
+// let chars = ["Z", "Y", "A", "D", "E", 10, 1];
+// let chars = ["A", "B", "C", 20, "D", "E", 10, 15, 6];
+
+
+// let numbers = chars.filter((e) => typeof e === "number")
+// let strings = chars.filter((e)=>typeof e === "string")
+// let newArr = [...numbers,...strings]
+// console.log(newArr.copyWithin(0,numbers.length,numbers.length*2));
+
+// filter all numbers
+// put numbers in first of array
+// replace from first array and muliblay length of array * 2
+// Needed Output
+// ['A', 'B', 'C', 'A', 'B', 'C', 'D', 'E']
+
+
+
+
+// // Destructuring [123] to [133] assignment 7
+// // ------------------------------------------
+
+// let numsOne = [1, 2, 3];
+// let numsTwo = [4, 5, 6];
+
+// //1 
+{
+    // console.log([...numsOne, ...numsTwo]);
+}
+// // 2  - for loop
+// {
+//     let merge = (first, second) => {
+//         for (i = 0; i < second.length; i++){
+//             first.push(second[i]);
+//         }
+//         return first;
+//     }
+//     var merged= merge(numsOne, numsTwo)
+//     console.log(merged);
+// }
+//3 concat
+// {
+//     console.log([].concat(numsOne,numsTwo));
+// }
+
+//4 - reduce
+// {
+//     let merged = numsTwo.reduce((arr, item) => {
+//         numsOne.push(item);
+//         return arr;
+//     }, numsOne)
+//     console.log(merged);
+// }
+
+// Needed Output
+// [1, 2, 3, 4, 5, 6]
+
+
+
+
+
+// // // Destructuring [123] to [133] assignment 8
+// // // -----------------------------------------
+// let n1 = [10, 30, 10, 20];
+// let n2 = [30, 20, 10];
+
+// let newArr =
+//     console.log(([...n1, ...n2]).length * Math.max(...n1));
+
+
+// // Needed Output
+// // 210
+
+
+
+/*
+let myString = "Hello Elzero Web School I Love elzero";
+// i => case-insensitive غير حساسة
+// g => globle كل ما يتوافر ع ليه الشرط 
+let regex = /elzero/i
+console.log(myString.match(regex));
+
+let regexx = /elzero/ig
+console.log(myString.match(regexx));
+
+let valid = /\w@/g;
+*/
+
+// let mails =  "o@nn.sa osama@gmail.com elzero@gmail.com osama@mail.ru anas@mail.net";
+// let mailsRe = /\w+@\w+.\w+/ig;
+// console.log(mails.match(mailsRe));
+
+// let nums = "0110 10 150 05120 0560 0350 00";
+// let numsRe = /0\d*0/ig;
+// console.log(nums.match(numsRe));
+
+
+// let serials = "s100s s3eeos s3000s S50000S s950000s";
+
+// console.log(serials.match(/s\d{3}s/ig));
+// console.log(serials.match(/s\d{4,5}s/ig));
+// console.log(serials.match(/s\d{4,}s/ig));
+
+
+
+
+
+
+// // // Destructuring [134] to [146] assignment 1
+// // // -----------------------------------------
+// let ip = "2001:db8:3333:4444:5555:6666:7777:8888";
+// console.log(ip.match(/(\w+\d+:){7}(\d+)/ig));
+
+
+
+
+// Destructuring [134] to [146] assignment 2
+// -----------------------------------------
+// let specialNames = "Os10O OsO Os100O Osa100O Os1000 Os100m";
+// console.log(specialNames.match(/os\d*o/ig));
+// Output
+// ['Os10O', 'OsO', 'Os100O']
+
+
+
+
+
+// Destructuring [134] to [146] assignment 3
+// -----------------------------------------
+// let phone = "+(995)-123 (4567)";
+// console.log(phone.match(/\+\(\d{3}\)-\d{3}\s\(\d{4}\)/ig));
+
+
+
+// Destructuring [134] to [146] assignment 4
+// -----------------------------------------
+// let re = /https?:\/\/(?:[-\w]+\.)?([-\w]+)\.\w+(?:\.\w+)?\/?.*/i;
+
+// \w+ - any word [1 or more]
+// i - case insensitive
+// \/ - escape
+// s? - optional
+// ?: - non-capturing group
+// [-\w] - any character except whitespace
+// \. - period
+// .* - any character [0 or more]
+
+
+
+
+// // // // Destructuring [134] to [146] assignment 5
+// // // // -----------------------------------------
+// let date1 = "25/10/1982";
+// let date2 = "25 - 10 - 1982";
+// let date3 = "25 10 1982";
+// let date4 = "25 10 82";
+
+// let re = /\d{2}\/?\s?\-?\s?\d{2}\/?\s?\-?\s?\d{2,4}/ig //Write Pattern Here
+
+// console.log(date1.match(re)); // "25/10/1982"
+// console.log(date2.match(re)); // "25 - 10 - 1982"
+// console.log(date3.match(re)); // "25 10 1982"
+// console.log(date4.match(re)); // "25 10 82"
+
+
+
+
+// // // // Destructuring [134] to [146] assignment 6
+// // // // -----------------------------------------
+// let url1 = 'elzero.org';
+// let url2 = 'http://elzero.org';
+// let url3 = 'https://elzero.org';
+// let url4 = 'https://www.elzero.org';
+// let url5 = 'https://www.elzero.org:8080/articles.php?id=100&cat=topics.'
+
+// let re = /(https?:\/\/)?(www.)?\w+.\w+(:?\d+\/\w+.?\w+.?\w+=?\d+\&?\w+=?\w+)?/ig;
+// let rex =/(https?:\/\/)?(www.)?\w+.\w+(:\d+\/\w+.\w+\?\w+\=\d+\&\w+\=\w+)?/ig;
+
+// // let re = /(https?:\/\/)?(www.)?elzero.org(:?\d+\/\w+\.\w+\?id=\d+&cat=\w+)?/gi;
+
+// console.log(url1.match(rex));
+// console.log(url2.match(rex));
+// console.log(url3.match(rex));
+// console.log(url4.match(rex));
+// console.log(url5.match(rex));
+
+
+
+
+
+
+// class car {
+//     constructor(color, price, company) {
+//         this.color = color;
+//         this.price = price;
+//         this.company = company;
+
+//     }
+// }
+
+// let car1 = new car("red", 2000, "fiyat");
+// let car2 = new car("blue",5000,"toyta")
+// console.log(car1.color);
+// console.log(car1.company);
+
+
+
+
+// Destructuring [147] to [158] assignment 1
+// -----------------------------------------
+// class car {
+//     constructor(name, model, price) {
+//         this.n = name;
+//         this.m = model;
+//         this.p = price;
+//     }
+//     run() {
+//         return `car is Running Now `
+//     }
+//     stop() {
+//         return `car is stopped `
+//     }
+// }
+
+// let car1 = new car("MG", 2022, 50000);
+// let car2 = new car("Gelly", 2015, 80000)
+// let car3 = new car("fyate", 2016, 20000);
+
+// console.log(`Car One Name Is ${car1.n} And Model Is ${car1.m} And Price Is ${car1.p}`);
+// console.log(car1.run());
+
+// // Needed Output
+
+// "Car One Name Is MG And Model Is 2022 And Price Is 420000"
+// "Car Is Running Now"
+
+
+
+
+// Destructuring [147] to [158] assignment 2
+// -----------------------------------------
+// class Phone {
+//     constructor(name, serial, price) {
+//         this.name = name;
+//         this.serial = serial;
+//         this.price = price;
+//     }
+// }
+
+// class Tablet extends Phone{
+//     constructor(name, serial, price, size) {
+//         super(name, serial, price);
+//         this.size = size || "Unknown";
+//     }
+//     fullDetails() {
+//         return `${this.name} Serial is ${this.serial} and Size is ${this.size}`
+//     }
+// }
+
+// // Write Tablet Class Here
+
+// let TabletOne = new Tablet("iPad", 100200300, 1500, 12.9);
+// let TabletTwo = new Tablet("Nokia", 350450650, 800, 10.5);
+// let TabletThree = new Tablet("LG", 250450650, 650);
+
+// console.log(`${TabletOne.fullDetails()}`);
+// // iPad Serial is 100200300 And Size Is 12.9
+
+// console.log(`${TabletTwo.fullDetails()}`);
+// // Nokia Serial is 350450650 And Size Is 10.5
+
+// console.log(`${TabletThree.fullDetails()}`);
+// // LG Serial is 250450650 And Size Is Unknown
+
+
+
+// Destructuring [147] to [158] assignment 3
+// -----------------------------------------
+// Edit The Class
+// class User {
+//     #c;
+//     constructor(username, card) {
+//         this.u = username;
+//         this.#c = card;
+//     }
+//     transform() {
+//         let credit = this.#c;
+//         credit = typeof credit == "string" ? credit : credit.toString();
+//         let creditRe = /\d{4}/g
+//         let result = credit.match(creditRe);
+
+//         result = result.map(function (e, index) {
+//             return index < result.length - 1 ? e + "-" : e;
+//         });
+
+//         result = result.join("");
+//         return result;
+
+//     }
+//     showData() {
+//         return `Hello ${this.u} Your Credit Card Number is ${this.transform()}`
+//     }
+// }
+
+// // Do Not Edit Anything Below
+
+// let userOne = new User("Osama", "1234-5678-1234-5678");
+// let userTwo = new User("Ahmed", "1234567812345678");
+// let userThree = new User("Ghareeb", 1234567812345678);
+
+// console.log(userOne.showData());
+// // Hello Osama Your Credit Card Number Is 1234-5678-1234-5678
+
+// console.log(userTwo.showData());
+// // Hello Ahmed Your Credit Card Number Is 1234-5678-1234-5678
+
+// console.log(userThree.showData());
+// // Hello Ghareeb Your Credit Card Number Is 1234-5678-1234-5678
+
+// console.log(userOne.c); // Prevent Accessing To Card Property Here
+// // Undefined
+
+
+
+// Destructuring [147] to [158] assignment 4
+// -----------------------------------------
+// Write Your Code Here
+
+
+// // Do Not Edit Below
+// let myStr = "Elzero";
+// String.prototype.addLove = function () {
+//     return `I love ${myStr} Web School `
+// }
+// console.log(myStr.addLove()); // I Love Elzero Web School
+
+
+
+
+
+
+
+
+
+// Destructuring [147] to [158] assignment 5
+// // -----------------------------------------
+// const myObj = {
+//     username: "Elzero",
+//     id: 100,
+//     score: 1000,
+//     country: "Egypt",
+// };
+
+// // Write Your Code Here
+// Object.defineProperties(myObj, {
+//     id: { enumerable: false },
+//     score: { writable: false },
+// });
+// delete myObj.country;
+
+// myObj.score = 500 + 500;
+
+// for (let prop in myObj) {
+//     console.log(`${prop} => ${myObj[prop]}`);
+// }
+
+// console.log(myObj);
+
+// // Needed Output
+
+// // "username => Elzero"
+// // "score => 1000"
+
+// // { username: 'Elzero', score: 1000, id: 100 }
+
+
+
+
+
+// let old = performance.now()
+// let x;
+// let y;
+
+// for (i = 0; i < 10000000; i++){
+//     for (x = 1; x < 14; x++){
+//         y = 14 - x;
+//         if ((x * x) + (y * y) == 100)
+//             break;
+//     }
+// }
+// console.log(x, y);
+// let neww = performance.new()
+
+// console.log(neww - old);
+
+
+
+
+
+// Destructuring [159] to [168] assignment 1
+// // -----------------------------------------
+// let dateNow = new Date();
+// let anasBirthday = new Date("mar 30, 93")
+// let age = dateNow - anasBirthday;
+
+// // console.log(age / 1000 / 60 / 60 / 24 / 30 / 12);
+// let ageInSec = age / 1000;
+// console.log(`${parseInt(ageInSec)} => Seconds`);
+
+// let ageInMin = ageInSec / 60;
+// console.log(`${parseInt(ageInMin)} => Minutes`);
+
+// let ageInHours = ageInMin / 60;
+// console.log(`${parseInt(ageInHours)} => Hours`);
+
+// let ageInDays = ageInHours / 24;
+// console.log(`${parseInt(ageInDays)} => Days`);
+
+// let ageInMonths = ageInDays / 30;
+// console.log(`${parseInt(ageInMonths)} => Months`);
+
+// let ageInYears = ageInMonths / 12;
+// console.log(`${parseInt(ageInYears)} => Years`);
+
+
+
+
+// Destructuring [159] to [168] assignment 2
+// // --------------------------------------
+
+// let dateAfter10Years = new Date(0);
+// dateAfter10Years.setFullYear(1980)
+// dateAfter10Years.setHours(0);
+// dateAfter10Years.setSeconds(1)
+// console.log(dateAfter10Years);
+
+
+
+// Destructuring [159] to [168] assignment 3
+// // --------------------------------------
+// let date = new Date();
+// date.setDate(0);
+// console.log(date);
+// console.log(`Previous Month Is April And Last Day Is ${date.getDate()}`);
+
+
+
+
+// Destructuring [159] to [168] assignment 4
+// // --------------------------------------
+// // way 1
+// let myBirthDate1 = new Date("03-20-1993");
+// console.log(myBirthDate1);
+
+// // way 2
+// let myBirthDate2 = new Date(1993, 02, 20);
+// console.log(myBirthDate2);
+
+// // way 3
+// let myBirthDate3 = new Date();
+// myBirthDate3.setFullYear(1993, 2, 20);
+// myBirthDate3.setHours(0, 0, 0, 0);
+// console.log(myBirthDate3);
+
+
+// Needed Output
+
+// "Mon Oct 25 1982 00:00:00 GMT+0200 (Eastern European Standard Time)"
+// "Mon Oct 25 1982 00:00:00 GMT+0200 (Eastern European Standard Time)"
+// "Mon Oct 25 1982 00:00:00 GMT+0200 (Eastern European Standard Time)"
+
+
+
+
+// Destructuring [159] to [168] assignment 5
+// ------------------------------------------
+
+
+// let old = performance.now()
+// for (i = 0; i < 100000; i++){
+//     console.log(i);
+// }
+// let neww = performance.now()
+
+// console.log(`#`.repeat(20));
+
+// console.log(`Loop Took => ${parseInt( neww - old) }  Milliseconds.`);
+
+// Needed Output
+
+// "Loop Took 1921 Milliseconds."
+
+
+
+
+// Destructuring [159] to [168] assignment 6
+// ------------------------------------------ انا مش فاهم السوال دا
+// // Write Your Generator Function Here
+// function* gen() {
+//     yield 14;
+//     yield 140 + 14;
+//     yield 140 + 14 + 340;
+//     let arr = [14, 140, 340];
+//     let sumArr;
+//     while (true) {
+//         arr.push(arr[arr.length - 1] + 200);
+//         sumArr = arr.reduce((a, b) => a + b);
+//         yield sumArr;
+//     }
+// }
+
+
+// let generator = gen();
+// console.log(generator.next()); // {value: 14, done: false}
+// console.log(generator.next()); // {value: 154, done: false}
+// console.log(generator.next()); // {value: 494, done: false}
+// console.log(generator.next()); // {value: 1034, done: false}
+// console.log(generator.next()); // {value: 1774, done: false}
+// console.log(generator.next()); // {value: 2714, done: false}
+// console.log(generator.next()); // {value: 3854, done: false}
+// console.log(generator.next()); // {value: 5194, done: false}
+// console.log(generator.next()); // {value: 6734, done: false}
+
+
+
+
+// Destructuring [159] to [168] assignment 7
+// -----------------------------------------
+// function* genNumbers() {
+//     yield* [1, 2, 2, 2, 3, 4, 5];
+// }
+// function* genLetters() {
+//     yield* ["A", "B", "B", "B", "C", "D"];
+// }
+
+// // Write Your Generator Function Here
+// function* genAll() {
+//     let numbers = genNumbers()
+//     numbers = [...new Set(numbers)];
+//     let letters = genLetters()
+//     letters = [...new Set(letters)];
+
+//     yield* numbers;
+//     yield* letters;
+
+// }
+// let generator = genAll();
+
+// console.log(generator.next()); // {value: 1, done: false}
+// console.log(generator.next()); // {value: 2, done: false}
+// console.log(generator.next()); // {value: 3, done: false}
+// console.log(generator.next()); // {value: 4, done: false}
+// console.log(generator.next()); // {value: 5, done: false}
+// console.log(generator.next()); // {value: "A", done: false}
+// console.log(generator.next()); // {value: "B", done: false}
+// console.log(generator.next()); // {value: "C", done: false}
+// console.log(generator.next()); // {value: "D", done: false}
+
+
+
+// Destructuring [159] to [168] assignment 8
+// -----------------------------------------
+
+// mod-tow.js
+// let a = 10;
+// let b = 20;
+// let c = 30;
+// export { a as numOne, b as numTwo, c as numThree };
+
+// // mod-one.js
+// import { numOne, numTwo, numThree } from "./mod-two.js";
+// export { numOne, numTwo, numThree };
+// export default function (one, two, three) {
+//     return numOne + numTwo + numThree;
+// }
+
+// // main.js
+// import calc, * as modOne from "./mod-one.js";
+// console.log(calc(modOne.numOne, modOne.numTwo, modOne.numThree)); // 60
+
+
+
+
+// function one() {
+//     console.log("one");
+
+// }
+// function two() {
+//     one();
+//     console.log('tow');
+// }
+
+// function three() {
+//     two();
+//     console.log('three');
+// }
+// one();
+// console.log('###############');
+// two()
+// console.log('###############');
+// three()
+// console.log('###############');
+
+
+
+
+// let num = 120;
+// console.log(num); // 120
+// console.log(null > 0); // false
+// console.log(null < 0); // false
+// console.log(null == 0); // false
+// console.log(null >= 0); // true
+// console.log(null <= 0); // true
+
+
+
+
+// Destructuring [169] to [178] assignment 1
+// -----------------------------------------
+
+// [
+//     {
+//         "id": 1,
+//         "name": "Ahmed",
+//         "category": "blog",
+//         "title": "JavaScript: The Good Parts",
+//         "artical": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia "
+//     },
+//     {
+//         "id": 2,
+//         "name": "Ahmed",
+//         "category": "blog",
+//         "title": "JavaScript: The Good Parts",
+//         "artical": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia "
+//     },
+//     {
+//         "id": 3,
+//         "name": "Ahmed",
+//         "category": "blog",
+//         "title": "JavaScript: The Good Parts",
+//         "artical": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia "
+//     },
+//     {
+//         "id": 4,
+//         "name": "Ahmed",
+//         "category": "blog",
+//         "title": "JavaScript: The Good Parts",
+//         "artical": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia "
+//     },
+//     {
+//         "id": 5,
+//         "name": "Ahmed",
+//         "category": "blog",
+//         "title": "JavaScript: The Good Parts",
+//         "artical": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia "
+//     },
+//     {
+//         "id": 6,
+//         "name": "Ahmed",
+//         "category": "blog",
+//         "title": "JavaScript: The Good Parts",
+//         "artical": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia "
+//     }
+// ]
+
+
+
+
+
+// // Destructuring [169] to [178] assignment 2
+// // -----------------------------------------
+
+// let req = new XMLHttpRequest();
+// req.open("get", "articles.json", true);
+// req.send();
+
+
+// req.onreadystatechange = function () {
+//     if (this.readyState === 4 && this.status === 200) {
+//         console.log(this.responseText);
+//         console.log("JSON Object Content Here");
+//     }
+// }
+// // Destructuring [169] to [178] assignment 3
+// // -----------------------------------------
+// // mainData Variable Content
+// req.onreadystatechange = function () {
+//     if (this.readyState === 4 && this.status === 200) {
+//         let stringJson = this.responseText;
+//         console.log(stringJson);
+
+//         console.log("#".repeat(20));
+//         let objectjson = JSON.parse(this.responseText)
+//         console.log(objectjson);
+//         console.log("JSON Object Content Here");
+
+//         // Destructuring [169] to [178] assignment 4
+//         // -----------------------------------------
+//         for (i in objectjson) {
+//             document.write(`
+//             <div>
+//                 <h2>${objectjson[i].title}</h2>
+//                 <p>${objectjson[i].artical}</p>
+//                 <p>Author : ${objectjson[i].author}</p>
+//                 <p>Category :  ${objectjson[i].category}</p>
+//             </div>
+//             `)
+//             document.write(`=`.repeat(20))
+//         }
+
+//     }
+// }
+
+// // UpdatedData Variable Content
+// // "JSON Object Content Here"
+
+
+
+
+
+
+
+// Destructuring [179] to [188] assignment 1
+// -----------------------------------------
+// let myPromis = new Promise((res, rej) => {
+//     let req = new XMLHttpRequest();
+//     req.open("get", "https://restcountries.com/v3.1/all");
+//     req.send();
+//     req.onload = function () {
+//         if (this.readyState === 4 && this.status === 200) {
+//             // console.log(JSON.parse(req.response));
+//             res(req.response)
+//         } else {
+//             // console.log("not Found");
+//             rej(Error("Not Found"));
+//         }
+//     }
+// }).then((result => {
+//     let myDate = JSON.parse(result);
+//     return myDate;
+// })).then((data) => {
+//     console.table(data);
+//     for (i in data) {
+//         document.write(`<div>`)
+//         document.write(`
+//             <div>
+//                 <h3>${data[i].title}</h3>
+//                 <p>${data[i].description}</p>
+//             </div>
+//         `)
+//         document.write(`</div>`)
+//         document.write("= ".repeat(20))
+//     // }
+// });
+
+
+
+
+
+
+
+// Destructuring [179] to [188] assignment 2
+// -----------------------------------------
+// fetch("jsonObject.json").then((data) => {
+//     // console.log(data.json());
+//     return data.json()
+    
+// }).then((data) => {
+//         for (i in data) {
+//         document.write(`<div>`)
+//         document.write(`
+//             <div>
+//                 <h3>${data[i].title}</h3>
+//                 <p>${data[i].description}</p>
+//             </div>
+//         `)
+//         document.write(`</div>`)
+//         document.write("= * ".repeat(10))
+//     }
+
+// })
+
+
+
+
+
+
+
+
+
+// fetch("https://restcountries.com/v3.1/all")
+//     .then((data) => {
+//     console.log(data.json());
+//     return data
+    
+// }).then((data) => {
+//     return data
+// }).then((data) => {
+//     console.log(data);
+// })
+
+
+
+
+
+
+
+
+
+let myPromis = new Promise((res, rej) => {
+    let req = new XMLHttpRequest();
+    req.open("get", "jsonObject.json");
+    req.send();
+    req.onload = function () {
+        if (this.readyState === 4 && this.status === 200) {
+            // console.log(JSON.parse(req.response));
+            res(req.response)
+        } else {
+            // console.log("not Found");
+            rej(Error("Not Found"));
+        }
+    }
+}).then((result => {
+    let myDate = JSON.parse(result);
+    return myDate;
+})).then((data) => {
+    console.table(data);
+    for (i in data) {
+        document.write(`<div>`)
+        document.write(`
+            <div>
+                <h3>${data[i].title}</h3>
+                <p>${data[i].description}</p>
+            </div>
+        `)
+        document.write(`</div>`)
+        document.write("= ".repeat(20))
+    }
+});
